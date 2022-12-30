@@ -4,55 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROJECT_2
+namespace PROJECT_1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int number, sum, i;
-            for (number = 29; number <= 9000; number++)
+            for (int number = 1; number <= 12; number++)
             {
-                i = 1;
-                sum = 0;
-                while (i < number)
+                int sum = 0;
+
+                for (int i = 1; i <= number; i++)
                 {
                     if (number % i == 0)
-                        sum = sum + i;
-                    i++;
+                    {
+                        sum++;
+                    }
                 }
-                if (sum == number)
+                if (sum == 2)
                 {
-                    Console.WriteLine("perfect number is " + number);
+                    Console.WriteLine(number);
                 }
+
             }
             Console.ReadLine();
         }
     }
 }
-     
-
-
-
-
-                   
-                        
-                       
-              
-   
-               
-               
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
